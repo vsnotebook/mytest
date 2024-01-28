@@ -1,0 +1,27 @@
+https://gohugo.io/
+hugo new site quickstart
+
+cd quickstart
+git init
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+
+echo theme = \"ananke\" >> config.toml
+
+hugo new posts/my-first-post2.md
+hugo new posts/oauth2.md
+
+hugo server -D
+
+hugo server -t m10c(name of theme) --buildDrafts
+
+
+hugo server -b "http://192.168.1.40:8080" -p 8080 --bind "0.0.0.0"
+hugo server --bind "0.0.0.0" -D
+hugo server -b "http://192.168.1.40" -p 1314 --bind "0.0.0.0" -D
+#####################
+
+
+git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
+
+
+vs.2023.frank
